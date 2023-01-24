@@ -1,5 +1,7 @@
 <?php
     include("db.php");
+    include("recommend.php");
+
     $movies = mysqli_query($con, "select * from user_movies");
     $matrix = array();
 
@@ -9,8 +11,11 @@
 
         $matrix[$username['username']][$movie['movie_name']] = $movie['movie_rating'];
     }
-    echo "<pre>";
-        print_r($matrix);
-    echo "</pre>";
+    // echo "<pre>";
+        // print_r($matrix);
+    // echo "</pre>";
+
+    // var_dump(getRecommendation($matrix, "tung1"));
+    getRecommendation($matrix, "tung2");
 
 ?>
