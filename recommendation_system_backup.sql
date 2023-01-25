@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 24, 2023 at 05:56 PM
+-- Generation Time: Jan 25, 2023 at 08:05 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -37,11 +37,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`) VALUES
-(1, 'tung1'),
 (2, 'tung1'),
 (3, 'tung2'),
 (4, 'tung3'),
-(5, 'tung4');
+(5, 'tung4'),
+(9, 'tung'),
+(10, 'tung7');
 
 -- --------------------------------------------------------
 
@@ -64,7 +65,22 @@ INSERT INTO `user_movies` (`id`, `user_id`, `movie_name`, `movie_rating`) VALUES
 (1, 0, 'how to train your penis', ''),
 (2, 1, 'how to train your penis', '2'),
 (3, 1, 'tung', '4'),
-(4, 1, 'fdf', '1');
+(4, 1, 'fdf', '1'),
+(5, 3, 'movie test', '3'),
+(6, 3, 'tester', '5'),
+(7, 3, 'ui', '5'),
+(8, 3, 'love you', '4'),
+(9, 3, 'penis', '1'),
+(10, 2, 'poke1', '3'),
+(11, 2, 'movie test1', '32'),
+(12, 3, 'lick my dick', '3'),
+(13, 3, 'sonic ', '4'),
+(14, 2, 'boku no pico', '6'),
+(15, 3, 'yeadh ', '5'),
+(16, 4, 'kimochi', '5'),
+(17, 5, 'ttttt', '5'),
+(18, 5, 'love you 2', '5'),
+(19, 9, 'con cu khong lo', '6');
 
 --
 -- Indexes for dumped tables
@@ -90,13 +106,13 @@ ALTER TABLE `user_movies`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `user_movies`
 --
 ALTER TABLE `user_movies`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
