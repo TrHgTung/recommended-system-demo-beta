@@ -1,8 +1,9 @@
 <h1>Thuật toán đề xuất: collaborative filtering (phương pháp lọc cộng tác)</h1>
+<sub>Mã nguồn này là của TrHgTung và các thành viên trong nhóm cùng phát triển, những người không liên quan không được khai thác mã nguồn này (Cút)</sub>
 
-<u>To-do</u>: cần xây dựng lại giao diện (front end) và Việt hóa giao diện
+<ins>To-do</ins>: cần xây dựng lại giao diện (front end) và Việt hóa giao diện
 
-<u>Yêu cầu đặt ra:</u>
+<ins>Yêu cầu đặt ra:</ins>
 Chúng ta lấy giả thiết rằng CGV Cinema đang cần một hệ thống có thể tự động cập nhật các đề xuất các phim đáng để xem, bẳng cách tổng hợp và xử lí các rating (đánh giá bằng điểm) từ khách hàng của họ
 
 - Bỏ qua các bước xây dựng một hệ thống đặt vé, xử lí thanh toán, cập nhật phía server. Thì chúng ta đang có một bộ dữ liệu thô gồm tên ng dùng của CGV (username), số điểm (rating) và các biến dữ liệu khác, từ các dữ liệu kể trên, ta phải sử dụng ít nhất 1 thuật toán có thể tự đôgnj xử lí và cập nhật các recommend phim cho những khách hàng mới có thể tham khảo phim mà họ sẽ bỏ tiền ra mua vé
