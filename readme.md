@@ -1,8 +1,8 @@
 <h1>Thuật toán đề xuất: collaborative filtering (phương pháp lọc cộng tác)</h1>
-<sub>Mã nguồn này là của TrHgTung và các thành viên trong nhóm cùng phát triển, những người không liên quan không được khai thác mã nguồn này (Cút)</sub>
+<sub>Mã nguồn này là của TrHgTung và các thành viên trong nhóm cùng phát triển, những người không liên quan không được phép khai thác mã nguồn này</sub>
 <h1>___________________________________________________</h1>
 
-<ins>To-do</ins>: cần xây dựng lại giao diện (front end) và Việt hóa giao diện
+<ins>To-do</ins>: Cần xây dựng lại giao diện (front end) và Việt hóa giao diện
 
 <ins>Yêu cầu đặt ra:</ins>
 Chúng ta lấy giả thiết rằng CGV Cinema đang cần một hệ thống có thể tự động cập nhật các đề xuất các phim đáng để xem, bẳng cách tổng hợp và xử lí các rating (đánh giá bằng điểm) từ khách hàng của họ
