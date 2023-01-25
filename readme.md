@@ -1,5 +1,6 @@
 <h1>Thuật toán đề xuất: collaborative filtering (phương pháp lọc cộng tác)</h1>
 <sub>Mã nguồn này là của TrHgTung và các thành viên trong nhóm cùng phát triển, những người không liên quan không được khai thác mã nguồn này (Cút)</sub>
+<h1>___________________________________________________</h1>
 
 <ins>To-do</ins>: cần xây dựng lại giao diện (front end) và Việt hóa giao diện
 
