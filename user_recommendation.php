@@ -15,7 +15,7 @@
         // print_r($matrix);
     // echo "</pre>";
 
-    // var_dump(getRecommendation($matrix, "tung1"));
-    getRecommendation($matrix, "tung2");
+    var_dump(getRecommendation($matrix, "tung2"));
+    // getRecommendation($matrix, "tung2");
 
 ?>
