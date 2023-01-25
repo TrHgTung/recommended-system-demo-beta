@@ -50,9 +50,12 @@
         foreach($total as $key=>$value){
             $ranks[$key] = $value / $simsums[$key];
 
-            array_multisort($ranks, SORT_DESC);
+            // array_multisort($ranks, SORT_DESC);
 
-            return $ranks;
+            // return $ranks;
         }
+        array_multisort($ranks, SORT_DESC);
+
+        return $ranks;
     }
 ?>

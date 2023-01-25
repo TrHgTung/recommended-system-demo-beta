@@ -7,8 +7,8 @@
     <head>
         <title>Index Page</title>
     </head>
-    <body>
-        <div>
+    <body align="center">
+        <div align="center">
             <div>
                 <h2>
                     <a href="./add_user.php">Add Users</a>
@@ -24,6 +24,9 @@
                     </th>
                     <th>
                         Showed Movies
+                    </th>
+                    <th>
+                        Showed Recommendation
                     </th>
                     <?php
                         $result = mysqli_query($con, "select * from users");
@@ -47,10 +50,18 @@
                                 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                             </form>
                         </td>
+
+                        <td>
+                            <form action="user_recommendation.php" >
+                                <input type="submit" name="show_movies" value="Show recommended movies">
+                                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                            </form>
+                        </td>
                     </tr>
                     <?php } ?>
                 </table>
             </div>
         </div>
+        <?php include("footer.php"); ?>
     </body>
 </html>

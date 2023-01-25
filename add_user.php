@@ -24,7 +24,7 @@
     ?>
     <div class="title" align="center">
         <div>
-            <h2>Add product</h2>
+            <h2>Add new user</h2>
         </div>
     </div>
     <?php
@@ -47,8 +47,9 @@
             </form>
         </div>
         <div>
-            <a href="add.php">Add Products/Movies</a>
+            <!-- <a href="add.php">Add Products/Movies</a> -->
         </div>
     </div>
+    <?php include("footer.php"); ?>
 </body>
 </html>

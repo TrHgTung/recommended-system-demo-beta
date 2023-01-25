@@ -7,8 +7,8 @@
     <head>
         <title>Index Page</title>
     </head>
-    <body>
-        <div>
+    <body align="center">
+        <div align="center">
             <div>
                 <h2>
                     <a href="./add_user.php">Add Users</a>
@@ -39,6 +39,9 @@
                     <?php } ?>
                 </table>
             </div>
+        </div>
+        <div align="center">
+            <a href="./index.php">Back to home page</a>
         </div>
     </body>
 </html>

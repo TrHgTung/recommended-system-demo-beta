@@ -52,5 +52,9 @@
             </form>
         </div>
     </div>
+    <!-- <div align="center">
+        <a href="./index.php">Back to home page</a>
+    </div> -->
+    <?php include("footer.php"); ?>
 </body>
 </html>
