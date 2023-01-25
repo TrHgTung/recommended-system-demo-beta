@@ -17,7 +17,7 @@
             <div>
                 <table>
                     <th>
-                        Name of All Users
+                        Users
                     </th>
                     <th>
                         Add Movies
