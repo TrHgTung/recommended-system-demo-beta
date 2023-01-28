@@ -1,0 +1,74 @@
+{
+    "user1": {
+        "Shen": 78.88,
+        "Fiora": 55.45,
+        "Darius": 90.00,
+        "Zac": 78.33,
+        "Olaf": 100.00,
+        "Garen": 90.00,
+        "Warwick": 99.33,
+        "Kled": 77.77,
+        "Gwen": 50.00,
+        "Nasus": 88.33
+    },
+    "user2": {
+        "Yasuo": 33.33,
+        "Fiora": 71.33,
+        "Teemo": 70.00,
+        "Zac": 80.00,
+        "Olaf": 90.00,
+        "Udyr": 90.00,
+        "Gangplank": 60.00,
+        "Poppy": 43.50,
+        "Quinn": 75.00,
+        "Nasus": 88.88
+    },
+    "user3": {
+        "Urgot": 100.00,
+        "Sett": 88.33,
+        "Darius": 11.33,
+        "Zorick": 54.55,
+        "Leesin": 76.45,
+        "Udyr": 70.00,
+        "Gangplank": 64.78,
+        "Malphite": 40.00,
+        "Kayle": 74.50,
+        "Singed": 50.33
+    },
+    "user4": {
+        "Shen": 100.00,
+        "Mordekaiser": 87.65,
+        "Camille": 81.15,
+        "Akshan": 98.15,
+        "Olaf": 12.00,
+        "Garen": 0.00,
+        "Warwick": 0.00,
+        "Renekton": 43.25,
+        "Gwen": 69.77,
+        "Maokai": 18.45
+    },
+    "user5": {
+        "Jayce": 18.88,
+        "Teemo": 90.11,
+        "Sion": 90.00,
+        "Akshan": 62.37,
+        "Camille": 50.00,
+        "Garen": 90.00,
+        "Warwick": 99.33,
+        "Kled": 20.00,
+        "Gwen": 50.00,
+        "Poppy": 17.33
+    },
+    "user6": {
+        "Gangplank": 12.00,
+        "Gnar": 51.15,
+        "Sett": 81.19,
+        "Yorick": 77.50,
+        "Pantheon": 95.65,
+        "Sion": 100.00,
+        "Warwick": 50.00,
+        "Kled": 77.78,
+        "Ornn": 50.00,
+        "Nasus": 9.00
+    }
+}

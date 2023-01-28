@@ -1,16 +1,46 @@
 <h1>HỆ THỐNG GỢI Ý CHỌN NHÂN VẬT (TƯỚNG) TRONG TỰA GAME **LIÊN MINH HUYỀN THOẠI**</h1>
 
 <h3>Thuật toán đề xuất: collaborative filtering (phương pháp lọc cộng tác)</h3>
-> Mã nguồn này là của **__TrHgTung__** và các thành viên khác trong nhóm cùng phát triển, những người không liên quan không được phép khai thác mã nguồn này.
-<h1>___________________________________________________</h1>
+
+<p><ins>Lưu ý:</ins> Mã nguồn này là của **TrHgTung** và các thành viên khác trong nhóm cùng phát triển, những người không liên quan không được phép khai thác mã nguồn này.</p>
 
 <ins>To-do</ins>: Cần xây dựng lại giao diện (<ins>front-end</ins>) và <ins>Việt hóa </ins>lại giao diện.
 
 <ins>Yêu cầu đặt ra:</ins>
-Chúng ta lấy giả thiết rằng có một số lượng người chơi **_Liên minh huyền thoại_** đang cần một hệ thống có thể tự động cập nhật các đề xuất về xu hướng các tướng đáng để chọn và mang vào trận đấu, bẳng cách tổng hợp và xử lí dữ liệu của các con tướng (đánh giá bằng số lượng trận mà từng người đã chọn) từ những người chơi cũ (dữ liệu từ quá khứ)
 
-- Đầu tiên, chúng ta cần một số lượng đông đảo người chơi đề cử cho những con tướng và số lượng trận đấu mà họ dùng chính con tướng này để chơi
-    + Ví dụ: Một người chơi tham gia khảo sát tên là <kbd>user1</kbd> đã thực hiện khảo sát cho rằng anh ta đã chơi `Yasuo` trong 10 trận gần đây nhất. Và <kbd>user2</kbd> đã chơi `Vayne` (~~không đi top~~) trong 8 trận gần đây nhất. Qua đó sẽ gợi ý cho các người chơi khác `Yasuo` là con tướng đáng để chọn đem vào trận hơn là dùng `Vayne`
+> Chúng ta lấy giả thiết rằng có một số lượng người chơi **_Liên minh huyền thoại_** đang cần một hệ thống có thể tự động cập nhật các đề xuất về xu hướng các tướng đáng để chọn và mang vào trận đấu, bẳng cách tổng hợp và xử lí dữ liệu của các con tướng (đánh giá bằng số trận thắng) từ những người chơi cũ (dữ liệu từ quá khứ)
+
+- Đầu tiên, chúng ta cần một số lượng đông đảo người chơi đề cử cho những con tướng và tổng số trận thắng của từng con tướng mà họ từng dùng để đấu;
+
+    + Ví dụ: Một người chơi tham gia khảo sát tên là <kbd>user1</kbd> đã thực hiện khảo sát cho rằng anh ta đã chơi `Yasuo` với tổng số trận thắng là 80. Và <kbd>user2</kbd> đã chơi `Vayne` (~~không đi top~~) với số trận thắng 34.
+    + Nhưng ngược lại, với <kbd>user1</kbd>, số trận thắng khi cầm `Vayne` chỉ là 10 trận, trong khi với con bài `Yasuo` trong tay, <kbd>user2</kbd> có cho mình tận 65 trận thắng
+    
+    => Qua đó sẽ gợi ý cho các người chơi khác rằng `Yasuo` là con tướng đáng để chọn đem vào trận hơn là dùng `Vayne`. Và chỉ khi các dữ liệu thay đổi về số lượng người chơi được khảo sát hay số lượng trận thắng của các trường hợp thì tỉ lệ đề xuất cũng thay đổi theo. Tất cả sẽ được báo cáo ở mỗi phân trang hiển thị của từng người chơi được khảo sát (với tỉ lệ được sắp xếp thấp dần)
+
+- Các tính năng khả dụng:
+
+    + Tạo mới tên người chơi: chỉ được chỉ định bởi người quản trị (admin), tính năng cho phép thêm tên người chơi LMHT được khảo sát lấy dữ kiện
+
+    + Tương ứng với mỗi người chơi, cho phép thêm các dữ kiện về `tên tướng`, `tổng số trận thắng với chính con tướng này`, và đây là dữ liệu được mỗi người chơi tương ứng cung cấp cho CSDL
+
+    + Xem danh sách: xem lại toàn bộ thông tin đã cung cấp bởi những người chơi
+
+    + Xem đề xuất: là **tính năng chính**, hiển thị tỉ lệ khuyến nghị cho bạn chọn từng con tướng, và đã được sắp xếp theo thứ tự giảm dần từ trên xuống. Vì thế ở mỗi bản báo cáo từ những người chơi cung cấp, bạn nên chọn cho mình những con ở các vị trí đầu tiên, vì có thể chúng đang meta.
+
+- Những gì được áp dụng vào dự án này:
+    
+    + Front-end: BootstrapCSS v5.3
+
+    + Back-end: PHP/MySQL
+
+- Cách khởi chạy trên localhost:
+
+    ```
+    1. Cài đặt một hệ máy chủ ảo (Apache XAMPP)
+    2. Cài đặt một hệ quản trị CSDL (MySQL)
+    3. Cài đặt PHP (PHP v8.1.12)
+    4. Có sẵn một trình duyệt đời mới (khuyến nghị sử dụng mã nguồn Chromnium-based)
+    ```
 
 - Hệ thống này sử dụng **collaborative filtering** (phương pháp lọc cộng tác), tham khảo: https://viblo.asia/p/xay-dung-mot-he-thong-goi-y-collaborative-filtering-de-dang-nhu-the-nao-GrLZDXv3Zk0
 

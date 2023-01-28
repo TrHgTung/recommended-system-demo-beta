@@ -1,4 +1,5 @@
 <?php
+    // hiển thị kết quả đề xuất cho từng user
     include("header.php");
     include("recommendation_title.php");
     include("db.php");
@@ -25,40 +26,31 @@
 ?>
 
 <div align="center">
-            <div>
-                <h2>
-                    <a href="./add_user.php">Add Users</a>
-                </h2>
+    <table>
+        <div class="row mb-3 text-center mt-5 mb-3">
+            <div class="col-6 themed-grid-col fw-bold">Tên quân tướng</div>
+            <div class="col-6 themed-grid-col fw-bold">Tỉ lệ thắng tương ứng</div>
+        </div>
+        <?php
+            $recommendation = array();
+            $recommendation = getRecommendation($matrix, $username['username']);
+
+            foreach($recommendation as $movie=>$rating){
+        ?>
+        <div class="row mb-3 text-center">
+            <div class="col-6 themed-grid-col">
+                <?php echo $movie; ?>
             </div>
-            <div>
-                <table>
-                    <th>
-                        Name of Movies
-                    </th>
-                    <th>
-                        Rating
-                    </th>
-                    <?php
-                        $recommendation = array();
-                        $recommendation = getRecommendation($matrix, $username['username']);
-
-                        foreach($recommendation as $movie=>$rating){
-    
-                    ?>
-                    <tr>
-                        <td>
-                            <?php echo $movie; ?>
-                        </td>
-
-                        <td>
-                            <?php echo $rating; ?>
-                        </td>
-                    </tr>
-                    <?php } ?>
-                </table>
+            <div class="col-6 themed-grid-col">
+                <?php echo $rating; ?>
             </div>
         </div>
-        <!-- <div align="center">
-            <a href="./index.php">Back to home page</a>
-        </div> -->
-        <?php include("footer.php"); ?>
+        <?php } ?>
+    </table>
+    <div class="mt-5 mb-5">
+        <div class="fw-bold fst-italic">
+            Chào, <?php echo $username; ?>. Đây là đề xuất các tướng mà bạn có thể chọn. Vị trí càng cao thì càng tốt, và mọi dữ liệu chỉ mang tính tham khảo!
+        </div>
+    </div>
+</div>
+<?php include("footer.php"); ?>

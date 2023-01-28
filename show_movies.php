@@ -1,4 +1,5 @@
 <?php
+    // show danh sách lịch sử khảo sát của từng user
     include("header.php");
     include("db.php");
 
