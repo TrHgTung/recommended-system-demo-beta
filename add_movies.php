@@ -22,39 +22,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Movies Info</title>
+    <link rel="stylesheet" href="./AlertifyJS/css/alertify.min.css">
 </head>
 <body>
     <div class="title" align="center">
-        <div>
-            <h2>Add product</h2>
+        <div class="mt-5 mb-3">
+            <h4>Biểu mẫu khảo sát</h4>
+            <p><i>Thêm các quân tướng và tổng số trận thắng của chúng</i></p>
         </div>
     </div>
     <?php
         if($flag){
-    ?><div align="center">
-        Movie Information Successfully Added! (to database)
-    </div>
+    ?>
+    <script src="./AlertifyJS/alertify.min.js"></script>
+    <script>
+        alertify.success('Dữ liệu đã được thêm vào thành công');
+    </script>
     <?php } ?>
-    <div class="user-form" align="center">  
-        <div>
-            <form action="add_movies.php" method="POST">
-                <div>
-                    <label for="">Name of Movie</label>
-                    <input type="text" name="movie_name" id="movie_name" class="form-control" required>
+
+    <div class="container-all-contents mt-5 g-3 row">
+        <form action="add_movies.php" method="POST">
+            <div class="d-flex justify-content-center">
+                <div class="mb-4 col-md-6">
+                    <label for="">Tên tướng LMHT</label>
+                    <input type="text" name="movie_name" id="movie_name" class="form-control " required>
                 </div>
-                <div>
-                    <label for="">Rating</label>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="mb-5 col-md-6">
+                    <label for="">Tổng số trận thắng</label>
                     <input type="number" name="movie_rating" id="movie_rating" class="form-control" required>
                 </div>
-                <div>
-                    <input type="submit" name="submit" value="submit" required>
-                </div>
-            </form>
-        </div>
+            </div>    
+            <div class="text-center mb-5">
+                <input type="submit" class="btn btn-primary" name="submit" value="Thêm dữ liệu này" required>
+            </div>
+        </form>
     </div>
-    <!-- <div align="center">
-        <a href="./index.php">Back to home page</a>
-    </div> -->
     <?php include("footer.php"); ?>
 </body>
 </html>

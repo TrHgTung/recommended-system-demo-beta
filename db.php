@@ -1,4 +1,3 @@
 <?php
-    $con = mysqli_connect("localhost","root","","recommendation_system");
-
+    $con = mysqli_connect("localhost","root","","recommendation_test");
 ?>

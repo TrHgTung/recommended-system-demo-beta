@@ -1,6 +1,10 @@
 <?php
+    session_start();
+    
+    include("check_login.php");
     include("db.php");
 
+    $user_data = check_login($con);
     $flag = 0;
 
     if(isset($_POST['submit'])){

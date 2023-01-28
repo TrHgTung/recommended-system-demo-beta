@@ -29,7 +29,7 @@
     <table>
         <div class="row mb-3 text-center mt-5 mb-3">
             <div class="col-6 themed-grid-col fw-bold">Tên quân tướng</div>
-            <div class="col-6 themed-grid-col fw-bold">Tỉ lệ thắng tương ứng</div>
+            <div class="col-6 themed-grid-col fw-bold">Mức độ đề xuất cho bạn</div>
         </div>
         <?php
             $recommendation = array();
@@ -49,7 +49,7 @@
     </table>
     <div class="mt-5 mb-5">
         <div class="fw-bold fst-italic">
-            Chào, <?php echo $username; ?>. Đây là đề xuất các tướng mà bạn có thể chọn. Vị trí càng cao thì càng tốt, và mọi dữ liệu chỉ mang tính tham khảo!
+            Xin chào, <?php echo $username['username']; ?>. Đây là đề xuất các tướng mà bạn có thể chọn. Vị trí càng cao thì càng tốt, và mọi dữ liệu chỉ mang tính tham khảo!
         </div>
     </div>
 </div>
