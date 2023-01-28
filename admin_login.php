@@ -3,8 +3,8 @@
         <form action="./add_user.php" method="POST">
             <h2>Xác thực quyền quản trị</h2>
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+                <input type="text" class="form-control" id="floatingInput" placeholder="admin">
+                <label for="floatingInput">nhập "admin"</label>
             </div>
             <div class="form-floating">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
