@@ -19,13 +19,31 @@
 
 - Các tính năng khả dụng:
 
+    + Giao diện truy cập lúc ban đầu sẽ trông như phía dưới:
+
+    ![alt text](https://github.com/TrHgTung/recommended-system-demo-beta/blob/main/product_displayed/home_index.jpg?raw=true)
+
     + Tạo mới tên người chơi: chỉ được chỉ định bởi người quản trị (admin), tính năng cho phép thêm tên người chơi LMHT được khảo sát lấy dữ kiện
+
+    ![alt text](https://github.com/TrHgTung/recommended-system-demo-beta/blob/main/product_displayed/login_as_admin.jpg?raw=true)
+
+    ![alt text](https://github.com/TrHgTung/recommended-system-demo-beta/blob/main/product_displayed/add_new_player.jpg?raw=true)
 
     + Tương ứng với mỗi người chơi, cho phép thêm các dữ kiện về `tên tướng`, `tổng số trận thắng với chính con tướng này`, và đây là dữ liệu được mỗi người chơi tương ứng cung cấp cho CSDL
 
+    ![alt text](https://github.com/TrHgTung/recommended-system-demo-beta/blob/main/product_displayed/add_items_1.jpg?raw=true)
+    ![alt text](https://github.com/TrHgTung/recommended-system-demo-beta/blob/main/product_displayed/add_items_2.jpg?raw=true)
+    ![alt text](https://github.com/TrHgTung/recommended-system-demo-beta/blob/main/product_displayed/add_items_3.jpg?raw=true)
+
     + Xem danh sách: xem lại toàn bộ thông tin đã cung cấp bởi những người chơi
 
+    ![alt text](https://github.com/TrHgTung/recommended-system-demo-beta/blob/main/product_displayed/history_view.jpg?raw=true)
+
     + Xem đề xuất: là **tính năng chính**, hiển thị tỉ lệ khuyến nghị cho bạn chọn từng con tướng, và đã được sắp xếp theo thứ tự giảm dần từ trên xuống. Vì thế ở mỗi bản báo cáo từ những người chơi cung cấp, bạn nên chọn cho mình những con ở các vị trí đầu tiên, vì có thể chúng đang meta.
+
+    ![alt text](https://github.com/TrHgTung/recommended-system-demo-beta/blob/main/product_displayed/recommend_result.jpg?raw=true)
+
+> Chưa phải là hình ảnh cuối cùng
 
 - Những gì được áp dụng vào dự án này:
     
