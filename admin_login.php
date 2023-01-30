@@ -45,7 +45,10 @@
                         <input type="password" class="form-control mt-3" name="pass" placeholder="admin">
                         <label for="">Mật Khẩu</label>
                     </div>
-                    <input class="w-100 btn btn-lg btn-primary mt-3" name="submit" type="submit" value="Xác thực">
+                    <!-- <input class="w-100 btn btn-lg btn-primary mt-3" name="submit" type="submit" value="Xác thực"> -->
+                    <div class="text-center mb-5">
+                        <input type="submit" class="btn btn-lg btn-primary mt-3" name="submit" value="Xác thực" required>
+                    </div>
                 </form>
             </main>
         </center>
