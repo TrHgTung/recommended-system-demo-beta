@@ -24,12 +24,14 @@
     // getRecommendation($matrix, "tung2");
 
 ?>
-
+<head>
+    <title>Hiển Thị Đề Xuất Cho <?php echo $username['username']; ?></title>
+</head>
 <div align="center">
     <table>
         <div class="row mb-3 text-center mt-5 mb-3">
             <div class="col-6 themed-grid-col fw-bold">Tên quân tướng</div>
-            <div class="col-6 themed-grid-col fw-bold">Mức độ đề xuất cho bạn</div>
+            <div class="col-6 themed-grid-col fw-bold">Mức độ đề xuất cho bạn (%)</div>
         </div>
         <?php
             $recommendation = array();

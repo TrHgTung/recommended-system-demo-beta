@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Index Page</title>
+        <title>Trang Chủ</title>
         <link rel="stylesheet" href="./bootstrap_css/all.min.css">
         <link rel="stylesheet" href="./bootstrap_css/bootstrap.min.css">
         <link rel="stylesheet" href="./bootstrap_css/index.css">
@@ -13,7 +13,7 @@
         <div align="center">
             <div>
                 <p>
-                    <a href="./add_user.php">Mời thêm người chơi đến khảo sát (Tính năng này chỉ dành cho admin)</a>
+                    <a href="./admin_login.php">Mời thêm người chơi đến khảo sát (Tính năng này chỉ dành cho admin)</a>
                 </p>
             </div>
 

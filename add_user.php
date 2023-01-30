@@ -1,5 +1,6 @@
 <?php
-    session_start();
+    // session_start();
+    error_reporting(E_ERROR | E_PARSE);
     
     include("check_login.php");
     include("db.php");
@@ -20,24 +21,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Users</title>
+    <title>Thêm Người Khảo Sát Mới</title>
+    <script src="./AlertifyJS/alertify.min.js"></script>
+    <script src="./AlertifyJS/alertify.js"></script>
+    <link rel="stylesheet" href="./AlertifyJS/css/alertify.css">
+    <link rel="stylesheet" href="./AlertifyJS/css/alertify.min.css">
 </head>
 <body>
+    <script>
+        alertify.message('Đăng nhập admin thành công');
+    </script>
     <?php
         include("./header.php");
     ?>
     <div class="title" align="center">
         <div>
-            <h2>Add new user</h2>
+            <h4>Giao diện thêm người chơi</h4>
         </div>
     </div>
     <?php
         if($flag){
     ?><div align="center">
-        User Successfully Added! (to database)
-    </div>
-    <div align="center">
-        <a href="./add_user.php">New user</a>
+        Đã thêm <?php echo $_POST['username']; ?> thành công vào CSDL!
     </div>
     <?php } ?>
     <div class="user-form" align="center">  

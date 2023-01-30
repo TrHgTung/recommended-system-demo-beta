@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Movies Info</title>
+    <title>Thêm Mới Các Thông Tin</title>
     <link rel="stylesheet" href="./AlertifyJS/css/alertify.min.css">
 </head>
 <body>

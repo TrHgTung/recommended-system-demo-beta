@@ -6,7 +6,7 @@
 ?>
 <html>
     <head>
-        <title>Xem danh sách</title>
+        <title>Xem Danh Sách</title>
     </head>
     <body align="center">
         <div align="center">
