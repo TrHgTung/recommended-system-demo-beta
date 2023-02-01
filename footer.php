@@ -3,5 +3,6 @@
         <a href="./index.php">
             <input type="button" class="btn btn-danger" value="Quay lại trang chủ">
         </a>
+        <!-- <button>In Trang Này</button> -->
     </div>
 </footer>

@@ -49,10 +49,21 @@
         </div>
         <?php } ?>
     </table>
-    <div class="mt-5 mb-5">
+    <div class="mt-5 mb-5 d-print-none">
         <div class="fw-bold fst-italic">
             Xin chào, <?php echo $username['username']; ?>. Đây là đề xuất các tướng mà bạn có thể chọn. Vị trí càng cao thì càng tốt, và mọi dữ liệu chỉ mang tính tham khảo!
         </div>
     </div>
+    <div class="mt-4 mb-4 d-print-none" align="center">
+        <button class="btn btn-secondary ms-4" id="printBtn">In trang này</button>
+    </div>
+    <script type="text/javascript">
+        const printContent = document.getElementById('printBtn');
+        printContent.addEventListener('click', function(){
+            print();
+        });
+    </script>
 </div>
-<?php include("footer.php"); ?>
+<div class="d-print-none">
+    <?php include("footer.php"); ?>
+</div>
